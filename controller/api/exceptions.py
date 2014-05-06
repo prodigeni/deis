@@ -22,10 +22,3 @@ class AbstractDeisException(APIException):
 
     class Meta:
         abstract = True
-
-
-class UserRegistrationException(AbstractDeisException):
-    """
-    Indicates that there was a problem registering the user.
-    """
-    status_code = status.HTTP_400_BAD_REQUEST
